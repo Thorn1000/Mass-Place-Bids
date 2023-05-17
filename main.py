@@ -17,7 +17,8 @@ import csv
 UserAgent = input("Please enter your main nation: ")
 NationName = input("Nation you want to place bids on: ")
 Password = input("Enter its password: ")
-session = NSSession("Buy all cards in CSV", "1.0.0", "Written by Thorn1000", UserAgent)
+keybind = "space"
+session = NSSession("Buy all cards in CSV", "1.0.0", "Written by Thorn1000", UserAgent, keybind)
 
 if session.login(NationName, Password):
     with open('bids.csv', 'r') as file:
