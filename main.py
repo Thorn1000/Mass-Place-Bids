@@ -24,4 +24,4 @@ if session.login(NationName, Password):
     with open('bids.csv', 'r') as file:
         reader = csv.reader(file)
         for row in reader:
-            session.bid(row[2], row[0], row[1])
+            session.bid(row[0], row[1], row[2])
